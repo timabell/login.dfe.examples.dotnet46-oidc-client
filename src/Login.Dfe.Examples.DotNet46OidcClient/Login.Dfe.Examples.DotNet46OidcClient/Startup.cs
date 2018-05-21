@@ -25,9 +25,9 @@ namespace Login.Dfe.Examples.DotNet46OidcClient
 
             app.UseOpenIdConnectAuthentication(new OpenIdConnectAuthenticationOptions
             {
-                ClientId = "YOUR-CLIENT-ID",
-                Authority = "DFE-LOGIN-OIDC-URL",
-                RedirectUri = "YOUR-REDIRECT-URL",
+                ClientId = "bats", // becoming a teacher service
+                Authority = "https://signin-test-oidc-as.azurewebsites.net/auth", // test dfe sign-in system
+                RedirectUri = "https://localhost:44317/auth/cb",
                 ResponseType = "id_token",
                 Scope = "openid email",
 
